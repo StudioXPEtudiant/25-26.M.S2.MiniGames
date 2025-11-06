@@ -1,3 +1,61 @@
-[gd_scene format=3 uid="uid://duxyebmus0fko"]
+[gd_scene load_steps=2 format=3 uid="uid://bk0dbhehdbnvh"]
+
+[ext_resource type="Texture2D" uid="uid://b13fp1p2r4yj3" path="res://icon.svg" id="1_ror2j"]
 
 [node name="UI SETTING" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(592.5, 362.5)
+scale = Vector2(10.8672, 5.67969)
+texture = ExtResource("1_ror2j")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 14.0
+offset_right = 778.0
+offset_bottom = 112.0
+action_mode = 0
+text = "PLAY STORY MODE"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 118.0
+offset_right = 778.0
+offset_bottom = 216.0
+action_mode = 0
+text = "PLAY NORMAL MODE
+"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 535.0
+offset_right = 778.0
+offset_bottom = 633.0
+action_mode = 0
+text = "CREDIT
+"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 222.0
+offset_right = 778.0
+offset_bottom = 320.0
+action_mode = 0
+text = "SETTING"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 327.0
+offset_right = 778.0
+offset_bottom = 425.0
+action_mode = 0
+text = "INVENTORY
+"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 430.0
+offset_right = 778.0
+offset_bottom = 528.0
+action_mode = 0
+text = "REWATCH"
