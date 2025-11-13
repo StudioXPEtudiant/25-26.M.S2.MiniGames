@@ -17,6 +17,7 @@ text = "WITCH"
 
 [node name="logo_witch_epic" type="Node2D"]
 position = Vector2(-610, -190)
+scale = Vector2(0.100305, 0.1)
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(0.738552, 0.48287, 0.100393, 1)
