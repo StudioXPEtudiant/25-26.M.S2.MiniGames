@@ -9,7 +9,7 @@ position = Vector2(592.5, 362.5)
 scale = Vector2(10.8672, 5.67969)
 texture = ExtResource("1_ror2j")
 
-[node name="Button" type="Button" parent="."]
+[node name="PLAY STORY MODE" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
 offset_top = 14.0
 offset_right = 778.0
@@ -17,7 +17,7 @@ offset_bottom = 112.0
 action_mode = 0
 text = "PLAY STORY MODE"
 
-[node name="Button2" type="Button" parent="."]
+[node name="PLAY NORMAL MODE" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
 offset_top = 118.0
 offset_right = 778.0
@@ -26,16 +26,7 @@ action_mode = 0
 text = "PLAY NORMAL MODE
 "
 
-[node name="Button3" type="Button" parent="."]
-offset_left = 389.0
-offset_top = 535.0
-offset_right = 778.0
-offset_bottom = 633.0
-action_mode = 0
-text = "CREDIT
-"
-
-[node name="Button4" type="Button" parent="."]
+[node name="SETTING" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
 offset_top = 222.0
 offset_right = 778.0
@@ -43,7 +34,7 @@ offset_bottom = 320.0
 action_mode = 0
 text = "SETTING"
 
-[node name="Button5" type="Button" parent="."]
+[node name="INVENTORY" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
 offset_top = 327.0
 offset_right = 778.0
@@ -52,10 +43,32 @@ action_mode = 0
 text = "INVENTORY
 "
 
-[node name="Button6" type="Button" parent="."]
+[node name="REWATCH" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
 offset_top = 430.0
 offset_right = 778.0
 offset_bottom = 528.0
 action_mode = 0
 text = "REWATCH"
+
+[node name="CREDIT" type="Button" parent="." groups=["normal setting ui button"]]
+offset_left = 389.0
+offset_top = 535.0
+offset_right = 778.0
+offset_bottom = 633.0
+action_mode = 0
+text = "CREDIT
+"
+
+[connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_visible" binds= [false]]
+[connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="CREDIT" to="PLAY NORMAL MODE" method="set_visible" binds= [false]]
+[connection signal="pressed" from="CREDIT" to="PLAY NORMAL MODE" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="CREDIT" to="CREDIT" method="set_visible" binds= [false]]
+[connection signal="pressed" from="CREDIT" to="CREDIT" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="CREDIT" to="SETTING" method="set_visible" binds= [false]]
+[connection signal="pressed" from="CREDIT" to="SETTING" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="CREDIT" to="INVENTORY" method="set_visible" binds= [false]]
+[connection signal="pressed" from="CREDIT" to="INVENTORY" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="CREDIT" to="REWATCH" method="set_visible" binds= [false]]
+[connection signal="pressed" from="CREDIT" to="REWATCH" method="set_disabled" binds= [true]]
