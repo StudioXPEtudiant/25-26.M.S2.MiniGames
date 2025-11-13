@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://clg0dokfoyixx"]
+[gd_scene load_steps=18 format=3 uid="uid://clg0dokfoyixx"]
 
 [sub_resource type="TubeTrailMesh" id="TubeTrailMesh_gwvnm"]
 
@@ -28,6 +28,8 @@ frame_1/texture = SubResource("CurveTexture_ufyw1")
 frame_1/duration = 1.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_scn8g"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sbw4a"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_6b8e7"]
 top_radius = 0.25
@@ -261,6 +263,20 @@ position = Vector2(2974, 1005)
 scale = Vector2(300, 300)
 mesh = SubResource("SphereMesh_scn8g")
 
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE"]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2370, 1440)
+scale = Vector2(175.25, 32.75)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE"]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2370, 1440)
+scale = Vector2(175.25, 32.75)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
 [node name="WITCH_EPIC_WAND" type="Node2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF"]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_WAND"]
@@ -325,3 +341,33 @@ position = Vector2(1942, 2543)
 rotation = -7.3585
 scale = Vector2(229.044, 248.5)
 mesh = SubResource("PrismMesh_3rmhs")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2370, 1440)
+scale = Vector2(175.25, 32.75)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(1971.19, 1488.62)
+scale = Vector2(77.6248, 11.375)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2490, 1630)
+scale = Vector2(87.625, 16.375)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(1956.19, 1258.62)
+scale = Vector2(87.625, 11.3751)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="WITCH_EPIC_yeark_thing____" type="Node2D" parent="."]
