@@ -88,6 +88,13 @@ offset_right = 1082.0
 offset_bottom = 662.0
 disabled = true
 
+[node name="<--BACK" type="Button" parent="."]
+offset_right = 69.0
+offset_bottom = 31.0
+action_mode = 0
+text = "<--BACK
+"
+
 [connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_visible" binds= [false]]
 [connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="CREDIT" to="PLAY NORMAL MODE" method="set_visible" binds= [false]]
@@ -103,3 +110,18 @@ disabled = true
 [connection signal="pressed" from="CREDIT" to="Multi credit text" method="set_visible" binds= [true]]
 [connection signal="pressed" from="CREDIT" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_disabled" binds= [false]]
 [connection signal="pressed" from="CREDIT" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="PLAY STORY MODE" method="set_visible" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="PLAY STORY MODE" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="PLAY NORMAL MODE" method="set_visible" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="PLAY NORMAL MODE" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="SETTING" method="set_visible" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="SETTING" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="INVENTORY" method="set_visible" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="INVENTORY" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="REWATCH" method="set_visible" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="REWATCH" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="CREDIT" method="set_visible" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="CREDIT" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="Multi credit text" method="set_visible" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
