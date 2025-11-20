@@ -31,6 +31,7 @@ frame_1/duration = 1.0
 [sub_resource type="SphereMesh" id="SphereMesh_133aq"]
 
 [node name="Personnage principal" type="Node2D"]
+scale = Vector2(2.43528, 2.07896)
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(0.359069, 0.359069, 0.359069, 1)
@@ -62,7 +63,7 @@ mesh = SubResource("BoxMesh_pmwvg")
 modulate = Color(0.359069, 0.359069, 0.359069, 1)
 position = Vector2(-5, 20)
 rotation = -0.0439856
-scale = Vector2(6.125, 14.25)
+scale = Vector2(6.07835, 14.2545)
 mesh = SubResource("BoxMesh_pmwvg")
 
 [node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
@@ -114,3 +115,6 @@ modulate = Color(0.235294, 0.235294, 0.235294, 1)
 position = Vector2(-1, -4)
 scale = Vector2(8.00907, 4.84251)
 mesh = SubResource("SphereMesh_133aq")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
