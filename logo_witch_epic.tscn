@@ -1,0 +1,178 @@
+[gd_scene load_steps=8 format=3 uid="uid://dpxpfbisi4e8u"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_q2aeo"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ei6lc"]
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_16qsg"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_crgo2"]
+
+[sub_resource type="TextMesh" id="TextMesh_j8gyl"]
+text = "WITCH"
+
+[sub_resource type="QuadMesh" id="QuadMesh_5wasm"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_71g5u"]
+
+[node name="logo_witch_epic" type="Node2D"]
+position = Vector2(-610, -190)
+scale = Vector2(0.100305, 0.1)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.738552, 0.48287, 0.100393, 1)
+position = Vector2(614.5, 279)
+scale = Vector2(1081, 448)
+mesh = SubResource("BoxMesh_q2aeo")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(275, 125.125)
+scale = Vector2(335, 61.75)
+mesh = SubResource("BoxMesh_q2aeo")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+position = Vector2(926, 165)
+scale = Vector2(456, 219)
+mesh = SubResource("BoxMesh_q2aeo")
+
+[node name="MeshInstance2D20" type="MeshInstance2D" parent="."]
+position = Vector2(286, 178.5)
+scale = Vector2(428, 233)
+mesh = SubResource("BoxMesh_q2aeo")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+modulate = Color(0.316415, 1.20327e-06, 0.197791, 1)
+position = Vector2(617, 397)
+rotation = 1.57952
+scale = Vector2(95.5001, 86.5)
+mesh = SubResource("CapsuleMesh_ei6lc")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(614, -29)
+rotation = 0.118682
+scale = Vector2(-1085.19, 166.09)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(612.504, -99.9033)
+rotation = 0.296706
+scale = Vector2(-955.939, 166.09)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(679.213, -203.135)
+rotation = 0.230383
+scale = Vector2(-833.461, 140.48)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(700.272, -289.854)
+rotation = 0.205949
+scale = Vector2(-676.306, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(714, -367)
+rotation = 0.205949
+scale = Vector2(-606.062, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(721.836, -417.213)
+rotation = 0.205949
+scale = Vector2(-564.863, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(727, -467)
+rotation = 0.0488692
+scale = Vector2(-562.905, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(733, -550)
+rotation = 0.0488692
+scale = Vector2(-540.13, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(736.694, -611.042)
+rotation = -0.0698132
+scale = Vector2(-497.467, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(725, -646)
+rotation = -0.18326
+scale = Vector2(-482.385, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(718, -689)
+rotation = -0.408407
+scale = Vector2(-451.735, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(691, -749)
+rotation = -0.495674
+scale = Vector2(-425.607, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="."]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(670, -799)
+rotation = -0.720821
+scale = Vector2(-400.683, 93.4556)
+mesh = SubResource("TubeTrailMesh_16qsg")
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="."]
+modulate = Color(0.486275, 0.00392157, 0.772549, 1)
+position = Vector2(598, -866)
+rotation = 0.375246
+scale = Vector2(287.896, 324.968)
+mesh = SubResource("PrismMesh_crgo2")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(936, 161)
+scale = Vector2(277, 119.25)
+mesh = SubResource("BoxMesh_q2aeo")
+
+[node name="MeshInstance2D21" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(275, 125.125)
+scale = Vector2(335, 61.75)
+mesh = SubResource("BoxMesh_q2aeo")
+
+[node name="MeshInstance2D22" type="MeshInstance2D" parent="."]
+position = Vector2(620, 912)
+scale = Vector2(1941.02, -2751.81)
+mesh = SubResource("TextMesh_j8gyl")
+
+[node name="MeshInstance2D23" type="MeshInstance2D" parent="."]
+modulate = Color(0.453251, 0.155507, 0.878981, 1)
+z_index = -100
+position = Vector2(652, 41)
+scale = Vector2(2371.5, 2371.5)
+mesh = SubResource("QuadMesh_5wasm")
+
+[node name="MeshInstance2D24" type="MeshInstance2D" parent="."]
+modulate = Color(0.627163, 0.0851644, 0.639942, 1)
+z_index = -100
+position = Vector2(652, 41)
+scale = Vector2(2250, 2250)
+mesh = SubResource("QuadMesh_71g5u")
