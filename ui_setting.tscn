@@ -34,6 +34,7 @@ offset_right = 778.0
 offset_bottom = 112.0
 action_mode = 0
 text = "PLAY STORY MODE"
+metadata/_edit_use_anchors_ = true
 
 [node name="PLAY NORMAL MODE" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
@@ -43,6 +44,7 @@ offset_bottom = 216.0
 action_mode = 0
 text = "PLAY NORMAL MODE
 "
+metadata/_edit_use_anchors_ = true
 
 [node name="SETTING" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
@@ -51,6 +53,7 @@ offset_right = 778.0
 offset_bottom = 320.0
 action_mode = 0
 text = "SETTING"
+metadata/_edit_use_anchors_ = true
 
 [node name="INVENTORY" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
@@ -60,6 +63,7 @@ offset_bottom = 425.0
 action_mode = 0
 text = "INVENTORY
 "
+metadata/_edit_use_anchors_ = true
 
 [node name="REWATCH" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
@@ -68,6 +72,7 @@ offset_right = 778.0
 offset_bottom = 528.0
 action_mode = 0
 text = "REWATCH"
+metadata/_edit_use_anchors_ = true
 
 [node name="CREDIT" type="Button" parent="." groups=["normal setting ui button"]]
 offset_left = 389.0
@@ -77,6 +82,7 @@ offset_bottom = 633.0
 action_mode = 0
 text = "CREDIT
 "
+metadata/_edit_use_anchors_ = true
 
 [node name="Multi credit text" type="MeshInstance2D" parent="."]
 visible = false
@@ -108,6 +114,7 @@ offset_bottom = 31.0
 action_mode = 0
 text = "<--BACK
 "
+metadata/_edit_use_anchors_ = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 visible = false
@@ -128,10 +135,14 @@ mesh = SubResource("TextMesh_28njg")
 [connection signal="pressed" from="CREDIT" to="CREDIT" method="set_visible" binds= [false]]
 [connection signal="pressed" from="CREDIT" to="CREDIT" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="CREDIT" to="Multi credit text" method="set_visible" binds= [true]]
+[connection signal="pressed" from="CREDIT" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_visible" binds= [true]]
 [connection signal="pressed" from="CREDIT" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_disabled" binds= [false]]
+[connection signal="pressed" from="CREDIT" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_visible" binds= [true]]
 [connection signal="pressed" from="CREDIT" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [false]]
 [connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="Multi credit text" method="set_visible" binds= [false]]
+[connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="MeshInstance2D" method="set_visible" binds= [true]]
 [connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="Multi credit text" method="set_visible" binds= [false]]
@@ -150,5 +161,8 @@ mesh = SubResource("TextMesh_28njg")
 [connection signal="pressed" from="<--BACK" to="CREDIT" method="set_visible" binds= [true]]
 [connection signal="pressed" from="<--BACK" to="CREDIT" method="set_disabled" binds= [false]]
 [connection signal="pressed" from="<--BACK" to="Multi credit text" method="set_visible" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="<--BACK" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="<--BACK" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="<--BACK" to="MeshInstance2D" method="set_visible" binds= [false]]
