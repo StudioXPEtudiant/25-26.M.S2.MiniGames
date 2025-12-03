@@ -1,0 +1,373 @@
+[gd_scene load_steps=18 format=3 uid="uid://boj3u8cs01nfs"]
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_gwvnm"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_ewqfc"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4bmfh"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_eo6j2"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_uw4cm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6u1s1"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_cmt85"]
+
+[sub_resource type="Gradient" id="Gradient_xgw53"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_y11se"]
+gradient = SubResource("Gradient_xgw53")
+
+[sub_resource type="CurveTexture" id="CurveTexture_ufyw1"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_bqsnj"]
+frames = 2
+frame_0/texture = SubResource("GradientTexture2D_y11se")
+frame_1/texture = SubResource("CurveTexture_ufyw1")
+frame_1/duration = 1.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_scn8g"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sbw4a"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6b8e7"]
+top_radius = 0.25
+
+[sub_resource type="BoxMesh" id="BoxMesh_mc6h1"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_tiwmd"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_3rmhs"]
+
+[node name="WITCH_EPIC_CHARACTER" type="Node2D"]
+position = Vector2(315, 114)
+scale = Vector2(0.1, 0.1)
+
+[node name="WITCH_EPIC_HAT" type="Node2D" parent="."]
+rotation = -0.123036
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2101.48, 1412.56)
+rotation = -3.02291
+scale = Vector2(1085.19, -166.09)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2099.98, 1341.65)
+rotation = -2.84489
+scale = Vector2(955.939, -166.09)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2166.69, 1238.42)
+rotation = -2.91121
+scale = Vector2(833.461, -140.48)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2187.75, 1151.7)
+rotation = -2.93564
+scale = Vector2(676.306, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2201.48, 1074.56)
+rotation = -2.93564
+scale = Vector2(606.062, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2209.32, 1024.34)
+rotation = -2.93564
+scale = Vector2(564.863, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2214.48, 974.557)
+rotation = -3.09272
+scale = Vector2(562.905, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2220.48, 891.557)
+rotation = -3.09272
+scale = Vector2(540.13, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2224.17, 830.515)
+rotation = 3.07178
+scale = Vector2(497.467, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2212.48, 795.557)
+rotation = 2.95833
+scale = Vector2(482.385, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2205.48, 752.557)
+rotation = 2.73319
+scale = Vector2(451.735, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2178.48, 692.557)
+rotation = 2.64592
+scale = Vector2(425.607, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+z_index = 20
+position = Vector2(2157.48, 642.557)
+rotation = 2.42077
+scale = Vector2(400.683, -93.4556)
+mesh = SubResource("TubeTrailMesh_gwvnm")
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="WITCH_EPIC_HAT"]
+modulate = Color(0.486275, 0.00392157, 0.772549, 1)
+z_index = 20
+position = Vector2(2085.48, 575.557)
+rotation = 0.375246
+scale = Vector2(287.896, 324.968)
+mesh = SubResource("PrismMesh_ewqfc")
+
+[node name="WITCH_EPIC_BODY" type="Node2D" parent="."]
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="WITCH_EPIC_BODY"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(2114, 1768)
+scale = Vector2(914.73, -455.175)
+skew = 0.356047
+mesh = SubResource("CapsuleMesh_4bmfh")
+
+[node name="WITCH_EPIC_FACE" type="Node2D" parent="."]
+
+[node name="WITH_EPIC_FACE_SKIN" type="Node2D" parent="WITCH_EPIC_FACE"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_FACE/WITH_EPIC_FACE_SKIN"]
+modulate = Color(0.738552, 0.48287, 0.100393, 1)
+z_index = 10
+position = Vector2(2247.57, 1382.87)
+rotation = 0.21093
+scale = Vector2(824.5, 348.585)
+mesh = SubResource("CapsuleMesh_eo6j2")
+
+[node name="WITCH_EPIC_MOUTH" type="Node2D" parent="WITCH_EPIC_FACE"]
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="WITCH_EPIC_FACE/WITCH_EPIC_MOUTH"]
+modulate = Color(0.316415, 1.20327e-06, 0.197791, 1)
+z_index = 30
+position = Vector2(2256, 1525)
+rotation = 1.57952
+scale = Vector2(95.5001, 86.5)
+skew = 0.0890118
+mesh = SubResource("CapsuleMesh_uw4cm")
+
+[node name="WITCH_EPIC_EYE2" type="Node2D" parent="WITCH_EPIC_FACE"]
+position = Vector2(350, 0)
+scale = Vector2(0.454172, 0.362258)
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="WITCH_EPIC_FACE/WITCH_EPIC_EYE2"]
+z_index = 30
+position = Vector2(4629.42, 3651.17)
+scale = Vector2(456, 219)
+skew = 0.410152
+mesh = SubResource("BoxMesh_6u1s1")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="WITCH_EPIC_FACE/WITCH_EPIC_EYE2"]
+modulate = Color(0, 0, 1, 1)
+z_index = 30
+position = Vector2(4639.42, 3647.17)
+scale = Vector2(277, 119.25)
+skew = 0.410152
+mesh = SubResource("BoxMesh_6u1s1")
+
+[node name="WITCH_EPIC_EYE" type="Node2D" parent="WITCH_EPIC_FACE"]
+scale = Vector2(0.454172, 0.362258)
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="WITCH_EPIC_FACE/WITCH_EPIC_EYE"]
+z_index = 30
+position = Vector2(4629.42, 3651.17)
+scale = Vector2(456, 219)
+skew = 0.410152
+mesh = SubResource("BoxMesh_6u1s1")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="WITCH_EPIC_FACE/WITCH_EPIC_EYE"]
+modulate = Color(0, 0, 1, 1)
+z_index = 30
+position = Vector2(4639.42, 3647.17)
+scale = Vector2(277, 119.25)
+skew = 0.410152
+mesh = SubResource("BoxMesh_6u1s1")
+
+[node name="WITCH_EPIC_STAFF_HAND" type="Node2D" parent="."]
+
+[node name="WITCH_EPIC_HAND" type="Node2D" parent="WITCH_EPIC_STAFF_HAND"]
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_HAND"]
+modulate = Color(0.485813, 0.00238266, 0.771111, 1)
+position = Vector2(2708, 1735)
+rotation = -1.16549
+scale = Vector2(390.365, -336.15)
+mesh = SubResource("CapsuleMesh_4bmfh")
+
+[node name="WITCH_EPIC_STAFF" type="Node2D" parent="WITCH_EPIC_STAFF_HAND"]
+
+[node name="WITCH_EPIC_MAGIC_STONE" type="Node2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF"]
+
+[node name="WITCH_EPIC_MAGIC" type="Node2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE/WITCH_EPIC_MAGIC"]
+modulate = Color(0.466667, 0, 0.466667, 0.164706)
+position = Vector2(2983, 1009)
+scale = Vector2(-535.003, 473.405)
+skew = 0.0593412
+mesh = SubResource("SphereMesh_cmt85")
+texture = SubResource("AnimatedTexture_bqsnj")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE/WITCH_EPIC_MAGIC/MeshInstance2D"]
+
+[node name="WITCH_EPIC_RUNE" type="Node2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE/WITCH_EPIC_RUNE"]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(2974, 1005)
+scale = Vector2(300, 300)
+mesh = SubResource("SphereMesh_scn8g")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE"]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2370, 1440)
+scale = Vector2(175.25, 32.75)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_MAGIC_STONE"]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2370, 1440)
+scale = Vector2(175.25, 32.75)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="WITCH_EPIC_WAND" type="Node2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_STAFF_HAND/WITCH_EPIC_STAFF/WITCH_EPIC_WAND"]
+modulate = Color(0.226471, 0.167521, 0.00161994, 1)
+position = Vector2(2976, 1785)
+scale = Vector2(248.75, 685.062)
+mesh = SubResource("CylinderMesh_6b8e7")
+
+[node name="WITCH_EPIC_LEG" type="Node2D" parent="."]
+
+[node name="WITCH_EPIC_LEG" type="Node2D" parent="WITCH_EPIC_LEG"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_LEG/WITCH_EPIC_LEG"]
+modulate = Color(0.233539, 0.208201, 0.878056, 1)
+z_index = -10
+position = Vector2(1736, 2178)
+scale = Vector2(-300.31, 323.111)
+mesh = SubResource("BoxMesh_mc6h1")
+
+[node name="WITCH_EPIC_FOOT" type="Node2D" parent="WITCH_EPIC_LEG"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_LEG/WITCH_EPIC_FOOT"]
+modulate = Color(0.352995, 0.208783, 0.103546, 1)
+z_index = -20
+position = Vector2(1785, 2374)
+rotation = -2.20924
+scale = Vector2(-522.246, 314.02)
+mesh = SubResource("SphereMesh_tiwmd")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="WITCH_EPIC_LEG/WITCH_EPIC_FOOT"]
+modulate = Color(0.352941, 0.207843, 0.101961, 1)
+position = Vector2(1942, 2543)
+rotation = -7.3585
+scale = Vector2(229.044, 248.5)
+mesh = SubResource("PrismMesh_3rmhs")
+
+[node name="WITCH_EPIC_LEG2" type="Node2D" parent="."]
+position = Vector2(500, 0)
+
+[node name="WITCH_EPIC_LEG" type="Node2D" parent="WITCH_EPIC_LEG2"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_LEG2/WITCH_EPIC_LEG"]
+modulate = Color(0.233539, 0.208201, 0.878056, 1)
+z_index = -10
+position = Vector2(1736, 2178)
+scale = Vector2(-300.31, 323.111)
+mesh = SubResource("BoxMesh_mc6h1")
+
+[node name="WITCH_EPIC_FOOT" type="Node2D" parent="WITCH_EPIC_LEG2"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_LEG2/WITCH_EPIC_FOOT"]
+modulate = Color(0.352995, 0.208783, 0.103546, 1)
+z_index = -20
+position = Vector2(1785, 2374)
+rotation = -2.20924
+scale = Vector2(-522.246, 314.02)
+mesh = SubResource("SphereMesh_tiwmd")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="WITCH_EPIC_LEG2/WITCH_EPIC_FOOT"]
+modulate = Color(0.352941, 0.207843, 0.101961, 1)
+position = Vector2(1942, 2543)
+rotation = -7.3585
+scale = Vector2(229.044, 248.5)
+mesh = SubResource("PrismMesh_3rmhs")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2370, 1440)
+scale = Vector2(175.25, 32.75)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(1971.19, 1488.62)
+scale = Vector2(77.6248, 11.375)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(2490, 1630)
+scale = Vector2(87.625, 16.375)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+modulate = Color(0.603711, 0.3913, 0.0728303, 1)
+z_index = 30
+position = Vector2(1956.19, 1258.62)
+scale = Vector2(87.625, 11.3751)
+mesh = SubResource("CapsuleMesh_sbw4a")
+
+[node name="WITCH_EPIC_yeark_thing____" type="Node2D" parent="."]
