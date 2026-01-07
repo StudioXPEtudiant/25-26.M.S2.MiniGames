@@ -1,0 +1,82 @@
+[gd_scene load_steps=6 format=3 uid="uid://davrwqfk5rj87"]
+
+[ext_resource type="Texture2D" uid="uid://b13fp1p2r4yj3" path="res://icon.svg" id="1_2hico"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y8vy0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vjfef"]
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_wjr1l"]
+
+[sub_resource type="TextMesh" id="TextMesh_4kar3"]
+text = "Fun Baloon studio"
+
+[node name="Icon" type="Sprite2D"]
+position = Vector2(401, 276)
+texture = ExtResource("1_2hico")
+
+[node name="enlevant d\'icone" type="MeshInstance2D" parent="."]
+modulate = Color(0.211765, 0.239216, 0.321569, 1)
+position = Vector2(-0.500001, -1.90735e-06)
+scale = Vector2(107, 108)
+mesh = SubResource("BoxMesh_y8vy0")
+
+[node name="icone" type="Node2D" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="icone"]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(28, -28)
+rotation = -1.56113
+scale = Vector2(47.5, 21.5)
+mesh = SubResource("CapsuleMesh_vjfef")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="icone"]
+modulate = Color(1, 0.0784314, 0, 1)
+position = Vector2(0, -36)
+rotation = -1.56113
+scale = Vector2(47.5, 21.5)
+mesh = SubResource("CapsuleMesh_vjfef")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="icone"]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-33, -27)
+rotation = -1.56113
+scale = Vector2(47.5, 21.5)
+mesh = SubResource("CapsuleMesh_vjfef")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="icone"]
+modulate = Color(0.054902, 1, 0, 1)
+position = Vector2(1, -12)
+rotation = -1.56113
+scale = Vector2(47.5, 21.5)
+mesh = SubResource("CapsuleMesh_vjfef")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="icone"]
+position = Vector2(28, 18)
+rotation = -1.57259
+scale = Vector2(44.5, 1.5)
+mesh = SubResource("TubeTrailMesh_wjr1l")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="icone"]
+position = Vector2(-1.98602, 25.7977)
+rotation = -1.57259
+scale = Vector2(28.9045, 1.5)
+mesh = SubResource("TubeTrailMesh_wjr1l")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="icone"]
+position = Vector2(0.999992, 33)
+rotation = -1.57259
+scale = Vector2(44.5, 1.5)
+mesh = SubResource("TubeTrailMesh_wjr1l")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="icone"]
+position = Vector2(-31, 19)
+rotation = -1.57259
+scale = Vector2(44.5, 1.5)
+mesh = SubResource("TubeTrailMesh_wjr1l")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="icone"]
+modulate = Color(0.169245, 0.169245, 0.169245, 1)
+position = Vector2(0.407074, 44)
+scale = Vector2(51.701, -200)
+mesh = SubResource("TextMesh_4kar3")
