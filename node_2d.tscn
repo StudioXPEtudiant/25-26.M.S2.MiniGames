@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://x3dsetu067fk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ivycf"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_ivycf")
+rotation = -0.117678
+scale = Vector2(1.47104, 1.18114)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Sprite2D"]
+position = Vector2(71.686, 81.3157)
+rotation = 0.238383
+scale = Vector2(-396268, -63143.7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/CharacterBody2D"]
