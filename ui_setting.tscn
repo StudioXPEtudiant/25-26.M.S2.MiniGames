@@ -30,7 +30,7 @@ offset_top = 118.0
 offset_right = 778.0
 offset_bottom = 216.0
 action_mode = 0
-text = "PLAY NORMAL MODE
+text = "PLAY SANDBOX MODE
 "
 
 [node name="Button3" type="Button" parent="."]
