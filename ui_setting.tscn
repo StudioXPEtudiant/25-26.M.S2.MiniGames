@@ -9,14 +9,13 @@ OLIVIER LAFLAMME
 BENJAMIN BÉRUBÉ"
 
 [sub_resource type="TextMesh" id="TextMesh_28njg"]
-text = "CREDIT TO OLIVIER LAFLAMME 🔥😜🔥:
-Created this game at 12 years old with Studio XP class
+text = "CREDIT TO BENJAMIN BÉRUBÉ ⚡🧏‍♂️⚡:
+Created this game at ## years old with Studio XP class
 
 
 LIST OF ACCOMPLISHMENT :
--Created the witch_epic logo and character.
--Created the UI you're watching right now.
--Had the game idea(just idea of the concept not the actual game or anything too big,im not going to give myshelf all the deserved)
+-Created the french menu.
+-Created parts of the english menu.
 -AND MORE...
 "
 
@@ -37,7 +36,7 @@ offset_top = 118.0
 offset_right = 778.0
 offset_bottom = 216.0
 action_mode = 0
-text = "PLAY NORMAL MODE
+text = "SANDBOX MODE
 "
 metadata/_edit_use_anchors_ = true
 
@@ -123,6 +122,13 @@ show_behind_parent = true
 position = Vector2(572.5, 312.5)
 scale = Vector2(10.0234, 5.60156)
 
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+visible = false
+modulate = Color(0, 1, 1, 1)
+position = Vector2(576.887, 324.484)
+scale = Vector2(112.704, -320.32)
+mesh = SubResource("TextMesh_28njg")
+
 [connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_visible" binds= [false]]
 [connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="CREDIT" to="PLAY NORMAL MODE" method="set_visible" binds= [false]]
@@ -149,6 +155,7 @@ scale = Vector2(10.0234, 5.60156)
 [connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="Multi credit text" method="set_visible" binds= [false]]
 [connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="MeshInstance2D2" method="set_visible" binds= [true]]
 [connection signal="pressed" from="<--BACK" to="PLAY STORY MODE" method="set_visible" binds= [true]]
 [connection signal="pressed" from="<--BACK" to="PLAY STORY MODE" method="set_disabled" binds= [false]]
 [connection signal="pressed" from="<--BACK" to="PLAY NORMAL MODE" method="set_visible" binds= [true]]
@@ -167,3 +174,4 @@ scale = Vector2(10.0234, 5.60156)
 [connection signal="pressed" from="<--BACK" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="<--BACK" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="<--BACK" to="MeshInstance2D" method="set_visible" binds= [false]]
+[connection signal="pressed" from="<--BACK" to="MeshInstance2D2" method="set_visible" binds= [false]]
