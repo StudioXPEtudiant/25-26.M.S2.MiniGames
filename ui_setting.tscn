@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bk0dbhehdbnvh"]
+[gd_scene load_steps=5 format=3 uid="uid://bk0dbhehdbnvh"]
 
 [ext_resource type="PackedScene" uid="uid://davrwqfk5rj87" path="res://icon.tscn" id="1_56xty"]
 
@@ -9,13 +9,28 @@ OLIVIER LAFLAMME
 BENJAMIN BÉRUBÉ"
 
 [sub_resource type="TextMesh" id="TextMesh_28njg"]
-text = "CREDIT TO BENJAMIN BÉRUBÉ ⚡🧏‍♂️⚡:
+text = "CREDIT TO OLIVIER LAFLAMME 🔥😜🔥:
+Created this game at 12 years old with Studio XP class
+
+
+LIST OF ACCOMPLISHMENT :
+-Created a big part of the english menu.
+-Created the credit you're reading right now😜.
+-Created the epic witch character.
+-Created the start choice map.
+-Created the icon.
+-Created the principal character.
+-AND MORE...
+"
+
+[sub_resource type="TextMesh" id="TextMesh_04hxp"]
+text = "CREDIT TO BENJAMIN BÉRUBÉ⚡🤦‍♂️⚡:
 Created this game at ## years old with Studio XP class
 
 
 LIST OF ACCOMPLISHMENT :
+-Created a part of the english menu.
 -Created the french menu.
--Created parts of the english menu.
 -AND MORE...
 "
 
@@ -111,10 +126,9 @@ text = "<--BACK
 metadata/_edit_use_anchors_ = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-visible = false
 modulate = Color(0, 1, 1, 1)
-position = Vector2(576.887, 324.484)
-scale = Vector2(112.704, -320.32)
+position = Vector2(571, 326.936)
+scale = Vector2(256.552, -240.649)
 mesh = SubResource("TextMesh_28njg")
 
 [node name="Icon2" parent="." instance=ExtResource("1_56xty")]
@@ -123,11 +137,9 @@ position = Vector2(572.5, 312.5)
 scale = Vector2(10.0234, 5.60156)
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
-visible = false
-modulate = Color(0, 1, 1, 1)
-position = Vector2(576.887, 324.484)
-scale = Vector2(112.704, -320.32)
-mesh = SubResource("TextMesh_28njg")
+position = Vector2(578, 218.076)
+scale = Vector2(280.31, -239.792)
+mesh = SubResource("TextMesh_04hxp")
 
 [connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_visible" binds= [false]]
 [connection signal="pressed" from="CREDIT" to="PLAY STORY MODE" method="set_disabled" binds= [true]]
@@ -153,9 +165,10 @@ mesh = SubResource("TextMesh_28njg")
 [connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="OLIVIER_LAFLAMME_CREDIT_BUTTON" to="MeshInstance2D" method="set_visible" binds= [true]]
 [connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="Multi credit text" method="set_visible" binds= [false]]
+[connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="OLIVIER_LAFLAMME_CREDIT_BUTTON" method="set_disabled" binds= [true]]
+[connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
-[connection signal="pressed" from="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" to="MeshInstance2D2" method="set_visible" binds= [true]]
 [connection signal="pressed" from="<--BACK" to="PLAY STORY MODE" method="set_visible" binds= [true]]
 [connection signal="pressed" from="<--BACK" to="PLAY STORY MODE" method="set_disabled" binds= [false]]
 [connection signal="pressed" from="<--BACK" to="PLAY NORMAL MODE" method="set_visible" binds= [true]]
@@ -174,4 +187,3 @@ mesh = SubResource("TextMesh_28njg")
 [connection signal="pressed" from="<--BACK" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_visible" binds= [false]]
 [connection signal="pressed" from="<--BACK" to="BENJAMIN_BÉRUBÉ_CREDIT_BUTTON" method="set_disabled" binds= [true]]
 [connection signal="pressed" from="<--BACK" to="MeshInstance2D" method="set_visible" binds= [false]]
-[connection signal="pressed" from="<--BACK" to="MeshInstance2D2" method="set_visible" binds= [false]]

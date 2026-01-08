@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://du6octqoggcq5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lp03r"]
+radius = 0.494899
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fm7jq"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_mp1t4"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_rs0ue"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ha8cf"]
+
+[node name="porte" type="Node2D"]
+scale = Vector2(1.01362, 1)
+
+[node name="porte" type="Node2D" parent="."]
+position = Vector2(269, -19)
+rotation = 1.5708
+scale = Vector2(521.429, 191.704)
+
+[node name="Area2D" type="Area2D" parent="porte"]
+position = Vector2(0.596443, -0.0104334)
+rotation = 1.5708
+scale = Vector2(1.72096, 0.769774)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="porte/Area2D"]
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_lp03r")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="porte"]
+modulate = Color(0.38981, 0.294178, 0.247013, 1)
+mesh = SubResource("CapsuleMesh_fm7jq")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="porte/MeshInstance2D4"]
+modulate = Color(0.051971, 0.051971, 0.051971, 0.215686)
+show_behind_parent = true
+position = Vector2(0.596443, -0.0104334)
+rotation = 1.5708
+scale = Vector2(1.72096, 0.769774)
+mesh = SubResource("SphereMesh_mp1t4")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="porte"]
+modulate = Color(0.388235, 0.294118, 0.247059, 1)
+position = Vector2(-0.278046, 0.0173333)
+scale = Vector2(0.625614, 1.8059)
+mesh = SubResource("SphereMesh_rs0ue")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="porte"]
+modulate = Color(0.321728, 0.321728, 0.321728, 1)
+position = Vector2(0.0671234, -0.526854)
+rotation = -1.5708
+scale = Vector2(0.319503, 0.222496)
+mesh = SubResource("CapsuleMesh_ha8cf")

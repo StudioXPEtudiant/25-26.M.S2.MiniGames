@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dfqxciho0vgkr"]
+[gd_scene load_steps=12 format=3 uid="uid://dfqxciho0vgkr"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_pmwvg"]
 
@@ -30,7 +30,10 @@ frame_1/duration = 1.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_133aq"]
 
-[node name="Personnage principal" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ye1pg"]
+size = Vector2(19.8551, 26.9365)
+
+[node name="Personnage principal" type="CharacterBody2D"]
 scale = Vector2(2.43528, 2.07896)
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
@@ -116,5 +119,10 @@ position = Vector2(-1, -4)
 scale = Vector2(8.00907, 4.84251)
 mesh = SubResource("SphereMesh_133aq")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.338195, 13.4683)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ye1pg")
+
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
+position = Vector2(1.64252, 7.21514)

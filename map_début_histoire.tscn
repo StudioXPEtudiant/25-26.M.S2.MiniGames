@@ -1,8 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://bfeurhbn7eveq"]
+[gd_scene load_steps=13 format=3 uid="uid://bfeurhbn7eveq"]
+
+[ext_resource type="PackedScene" uid="uid://dfqxciho0vgkr" path="res://personnage_principal.tscn" id="1_o3l1b"]
+[ext_resource type="Script" path="res://top_down_controller.gd" id="2_bp465"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_hrjy7"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_jce3y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xd46m"]
+radius = 0.494899
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yhqfr"]
 
@@ -32,25 +38,33 @@ mesh = SubResource("QuadMesh_hrjy7")
 [node name="lumière" type="Node2D" parent="."]
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="lumière"]
-position = Vector2(587.555, -204.103)
+position = Vector2(587.567, 4422.67)
 rotation = 3.14159
-scale = Vector2(1145.81, -18590.5)
+scale = Vector2(1145.81, -9336.95)
 mesh = SubResource("QuadMesh_hrjy7")
 
 [node name="MeshInstance2D3" type="MeshInstance2D" parent="lumière"]
-position = Vector2(602, -9367)
+position = Vector2(550.086, -670.457)
 rotation = 3.14159
 scale = Vector2(1626.01, -1319.08)
 mesh = SubResource("SphereMesh_jce3y")
 
 [node name="porte" type="Node2D" parent="."]
-position = Vector2(611, -9598)
+position = Vector2(559.086, -901.457)
 rotation = 1.5708
 scale = Vector2(521.429, 191.704)
 
+[node name="Area2D" type="Area2D" parent="porte"]
+position = Vector2(0.596443, -0.0104334)
+rotation = 1.5708
+scale = Vector2(1.72096, 0.769774)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="porte/Area2D"]
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_xd46m")
+
 [node name="MeshInstance2D4" type="MeshInstance2D" parent="porte"]
 modulate = Color(0.38981, 0.294178, 0.247013, 1)
-scale = Vector2(1, 1)
 mesh = SubResource("CapsuleMesh_yhqfr")
 
 [node name="MeshInstance2D6" type="MeshInstance2D" parent="porte/MeshInstance2D4"]
@@ -109,3 +123,9 @@ position = Vector2(1047, 8260)
 rotation = 6.27506
 scale = Vector2(2076.53, 1556.41)
 mesh = SubResource("TextMesh_h3x22")
+
+[node name="Personnage principal" parent="." instance=ExtResource("1_o3l1b")]
+position = Vector2(566, 8214)
+scale = Vector2(10, 8.538)
+up_direction = Vector2(0.707107, -0.707107)
+script = ExtResource("2_bp465")
