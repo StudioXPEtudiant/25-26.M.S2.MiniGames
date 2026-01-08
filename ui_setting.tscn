@@ -126,6 +126,7 @@ text = "<--BACK
 metadata/_edit_use_anchors_ = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
 modulate = Color(0, 1, 1, 1)
 position = Vector2(571, 326.936)
 scale = Vector2(256.552, -240.649)
@@ -137,6 +138,7 @@ position = Vector2(572.5, 312.5)
 scale = Vector2(10.0234, 5.60156)
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+visible = false
 position = Vector2(578, 218.076)
 scale = Vector2(280.31, -239.792)
 mesh = SubResource("TextMesh_04hxp")
