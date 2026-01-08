@@ -1,0 +1,111 @@
+[gd_scene load_steps=10 format=3 uid="uid://bfeurhbn7eveq"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_hrjy7"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_jce3y"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_yhqfr"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_uhupt"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ry2bo"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ko2r2"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_cy0d8"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_n42h2"]
+
+[sub_resource type="TextMesh" id="TextMesh_h3x22"]
+text = "^
+|"
+
+[node name="MAP DÉBUT HISTOIRE" type="Node2D"]
+position = Vector2(0, -7897)
+
+[node name="noir" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-2.38419e-07, -0.000181079)
+scale = Vector2(-23869, 20102.3)
+mesh = SubResource("QuadMesh_hrjy7")
+
+[node name="lumière" type="Node2D" parent="."]
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="lumière"]
+position = Vector2(587.555, -204.103)
+rotation = 3.14159
+scale = Vector2(1145.81, -18590.5)
+mesh = SubResource("QuadMesh_hrjy7")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="lumière"]
+position = Vector2(602, -9367)
+rotation = 3.14159
+scale = Vector2(1626.01, -1319.08)
+mesh = SubResource("SphereMesh_jce3y")
+
+[node name="porte" type="Node2D" parent="."]
+position = Vector2(611, -9598)
+rotation = 1.5708
+scale = Vector2(521.429, 191.704)
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="porte"]
+modulate = Color(0.38981, 0.294178, 0.247013, 1)
+scale = Vector2(1, 1)
+mesh = SubResource("CapsuleMesh_yhqfr")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="porte/MeshInstance2D4"]
+modulate = Color(0.051971, 0.051971, 0.051971, 0.215686)
+show_behind_parent = true
+position = Vector2(0.596443, -0.0104334)
+rotation = 1.5708
+scale = Vector2(1.72096, 0.769774)
+mesh = SubResource("SphereMesh_uhupt")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="porte"]
+modulate = Color(0.388235, 0.294118, 0.247059, 1)
+position = Vector2(-0.278046, 0.0173333)
+scale = Vector2(0.625614, 1.8059)
+mesh = SubResource("SphereMesh_ry2bo")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="porte"]
+modulate = Color(0.321728, 0.321728, 0.321728, 1)
+position = Vector2(0.0671234, -0.526854)
+rotation = -1.5708
+scale = Vector2(0.319503, 0.222496)
+mesh = SubResource("CapsuleMesh_ko2r2")
+
+[node name="cercle démoniaque" type="Node2D" parent="."]
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="cercle démoniaque"]
+modulate = Color(1, 0.0470588, 0, 1)
+position = Vector2(575, 9564)
+scale = Vector2(900, 900)
+mesh = SubResource("SphereMesh_cy0d8")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="cercle démoniaque"]
+modulate = Color(1, 0.686275, 0, 1)
+self_modulate = Color(1, 0.686275, 0, 1)
+position = Vector2(570.5, 9591)
+scale = Vector2(470, 340.194)
+mesh = SubResource("SphereMesh_n42h2")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="cercle démoniaque"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(572.75, 9594.75)
+scale = Vector2(200, 93.088)
+mesh = SubResource("SphereMesh_n42h2")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(131, 8184)
+rotation = 3.13394
+scale = Vector2(2076.53, 1556.41)
+mesh = SubResource("TextMesh_h3x22")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(1047, 8260)
+rotation = 6.27506
+scale = Vector2(2076.53, 1556.41)
+mesh = SubResource("TextMesh_h3x22")
