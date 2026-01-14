@@ -121,7 +121,6 @@ mesh = SubResource("SphereMesh_133aq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.338195, 13.4683)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ye1pg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
