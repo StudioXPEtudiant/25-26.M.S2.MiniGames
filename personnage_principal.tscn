@@ -125,3 +125,4 @@ shape = SubResource("RectangleShape2D_ye1pg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1.64252, 7.21514)
+scale = Vector2(6.28505, -37.4991)
