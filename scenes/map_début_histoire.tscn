@@ -49,7 +49,7 @@ mesh = SubResource("TextMesh_ware8")
 
 [node name="noir" type="MeshInstance2D" parent="."]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(-7488.67, 7280.58)
+position = Vector2(-6437.67, 6212.58)
 scale = Vector2(-23869, 39908.6)
 mesh = SubResource("QuadMesh_hrjy7")
 
