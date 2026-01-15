@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bfeurhbn7eveq"]
+[gd_scene load_steps=16 format=3 uid="uid://bfeurhbn7eveq"]
 
 [ext_resource type="PackedScene" uid="uid://dfqxciho0vgkr" path="res://personnage_principal.tscn" id="1_svjap"]
 [ext_resource type="Script" path="res://top_down_controller.gd" id="2_jlclb"]
@@ -34,6 +34,8 @@ text = "^
 |
 "
 
+[sub_resource type="SphereMesh" id="SphereMesh_ifm55"]
+
 [node name="MAP DÉBUT HISTOIRE" type="Node2D"]
 position = Vector2(0, -7897)
 
@@ -47,14 +49,14 @@ mesh = SubResource("TextMesh_ware8")
 
 [node name="noir" type="MeshInstance2D" parent="."]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(-2.38419e-07, 9903.17)
+position = Vector2(-7488.67, 7280.58)
 scale = Vector2(-23869, 39908.6)
 mesh = SubResource("QuadMesh_hrjy7")
 
 [node name="lumière" type="Node2D" parent="."]
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="lumière"]
-position = Vector2(587.567, 4422.67)
+position = Vector2(-70324, 495168)
 rotation = 3.14159
 scale = Vector2(1145.81, -9336.95)
 mesh = SubResource("QuadMesh_hrjy7")
@@ -71,13 +73,14 @@ rotation = 1.5708
 scale = Vector2(521.429, 191.704)
 
 [node name="Area2D" type="Area2D" parent="porte"]
-position = Vector2(0.455396, 0.130854)
+position = Vector2(0.601149, -0.103885)
 rotation = 1.5708
 scale = Vector2(1.72096, 0.769774)
 collision_layer = 5
 collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="porte/Area2D"]
+position = Vector2(0.0545596, 0.00498251)
 shape = SubResource("CircleShape2D_xd46m")
 
 [node name="MeshInstance2D4" type="MeshInstance2D" parent="porte"]
@@ -94,7 +97,7 @@ mesh = SubResource("SphereMesh_uhupt")
 
 [node name="MeshInstance2D5" type="MeshInstance2D" parent="porte"]
 modulate = Color(0.388235, 0.294118, 0.247059, 1)
-position = Vector2(-0.278046, 0.0173333)
+position = Vector2(-0.272263, -0.00129085)
 scale = Vector2(0.625614, 1.8059)
 mesh = SubResource("SphereMesh_ry2bo")
 
@@ -149,7 +152,7 @@ scale = Vector2(2076.53, 1556.41)
 mesh = SubResource("TextMesh_h3x22")
 
 [node name="Personnage principal" parent="." instance=ExtResource("1_svjap")]
-position = Vector2(573, 7954)
+position = Vector2(573, -38)
 scale = Vector2(10, 8.538)
 collision_layer = 5
 collision_mask = 5
@@ -158,4 +161,18 @@ platform_floor_layers = 2147483643
 platform_wall_layers = 4
 script = ExtResource("2_jlclb")
 
-[connection signal="area_entered" from="porte/Area2D" to="Personnage principal" method="set_global_position" binds= [Vector2i(100, 100)]]
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="."]
+modulate = Color(0.560784, 0.964706, 0.839216, 1)
+show_behind_parent = true
+position = Vector2(-34616, -86931)
+scale = Vector2(1000, 1000)
+mesh = SubResource("SphereMesh_ifm55")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="."]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(-34612.9, -86935.5)
+scale = Vector2(452.26, 429.802)
+mesh = SubResource("SphereMesh_ifm55")
+
+[connection signal="body_entered" from="porte/Area2D" to="Personnage principal" method="_on_area_2d_body_entered"]

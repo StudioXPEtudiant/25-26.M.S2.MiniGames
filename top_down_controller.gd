@@ -27,3 +27,7 @@ func _physics_process(_delta):
 
 func set_kickback(direction):
 	_kb_direction = direction
+
+
+func _on_area_2d_body_entered(body):
+	position = Vector2(-34612.875,-86935.469) 
