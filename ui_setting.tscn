@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bk0dbhehdbnvh"]
+[gd_scene load_steps=5 format=3 uid="uid://bk0dbhehdbnvh"]
 
 [ext_resource type="Texture2D" uid="uid://cp4sdxnredeeg" path="res://Screenshot 2025-01-30 170010.png" id="1_nkq55"]
 [ext_resource type="Texture2D" uid="uid://b6dwyjqtcdwp1" path="res://Screenshot 2026-01-07 195014.png" id="2_s2owq"]
+[ext_resource type="Texture2D" uid="uid://c8db0mk543dlg" path="res://Screenshot 2026-01-21 182244.png" id="3_i0qic"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_k70ji"]
 
@@ -17,7 +18,7 @@ position = Vector2(575.75, 302)
 scale = Vector2(6.08505, 3.46059)
 texture = ExtResource("1_nkq55")
 
-[node name="Button" type="Button" parent="."]
+[node name="story mode bouton" type="Button" parent="."]
 offset_left = 389.0
 offset_top = 15.0
 offset_right = 778.0
@@ -25,7 +26,7 @@ offset_bottom = 113.0
 action_mode = 0
 text = "PLAY STORY MODE"
 
-[node name="Button2" type="Button" parent="."]
+[node name="sandbox mode bouton" type="Button" parent="."]
 offset_left = 389.0
 offset_top = 118.0
 offset_right = 778.0
@@ -34,7 +35,7 @@ action_mode = 0
 text = "PLAY SANDBOX MODE
 "
 
-[node name="Button3" type="Button" parent="."]
+[node name="credits bouton" type="Button" parent="."]
 offset_left = 389.0
 offset_top = 535.0
 offset_right = 778.0
@@ -43,7 +44,7 @@ action_mode = 0
 text = "CREDIT
 "
 
-[node name="Button4" type="Button" parent="."]
+[node name="settings bouton" type="Button" parent="."]
 offset_left = 389.0
 offset_top = 222.0
 offset_right = 778.0
@@ -51,7 +52,7 @@ offset_bottom = 320.0
 action_mode = 0
 text = "SETTING"
 
-[node name="Button5" type="Button" parent="."]
+[node name="inventory bouton" type="Button" parent="."]
 offset_left = 389.0
 offset_top = 327.0
 offset_right = 778.0
@@ -60,7 +61,7 @@ action_mode = 0
 text = "INVENTORY
 "
 
-[node name="Button6" type="Button" parent="."]
+[node name="rewatch bouton" type="Button" parent="."]
 offset_left = 389.0
 offset_top = 430.0
 offset_right = 778.0
@@ -68,6 +69,11 @@ offset_bottom = 528.0
 action_mode = 0
 text = "REWATCH"
 
-[node name="Screenshot2026-01-07195014" type="Sprite2D" parent="."]
+[node name="settings desing" type="Sprite2D" parent="."]
 position = Vector2(690, 272)
 texture = ExtResource("2_s2owq")
+
+[node name="credit desing" type="Sprite2D" parent="."]
+position = Vector2(700.5, 585.25)
+scale = Vector2(1.10465, 1.19492)
+texture = ExtResource("3_i0qic")
