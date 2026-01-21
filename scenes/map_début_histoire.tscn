@@ -152,7 +152,7 @@ scale = Vector2(2076.53, 1556.41)
 mesh = SubResource("TextMesh_h3x22")
 
 [node name="Personnage principal" parent="." instance=ExtResource("1_svjap")]
-position = Vector2(573, -38)
+position = Vector2(573, 8099)
 scale = Vector2(10, 8.538)
 collision_layer = 5
 collision_mask = 5

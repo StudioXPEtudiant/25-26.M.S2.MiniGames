@@ -1,0 +1,157 @@
+[gd_scene load_steps=16 format=3 uid="uid://hbdeufqimy7o"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_i6bib"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_qlgse"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_m7qpp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_j3g0g"]
+
+[sub_resource type="Gradient" id="Gradient_qqbqf"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_igk35"]
+gradient = SubResource("Gradient_qqbqf")
+fill_from = Vector2(0.683962, 0.122642)
+fill_to = Vector2(0.698113, 0.00943396)
+
+[sub_resource type="Gradient" id="Gradient_7w4lx"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4hcme"]
+gradient = SubResource("Gradient_7w4lx")
+fill_from = Vector2(0.981132, 0.0141509)
+
+[sub_resource type="Gradient" id="Gradient_5be78"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wqoso"]
+gradient = SubResource("Gradient_5be78")
+fill_from = Vector2(0.485849, 0.264151)
+fill_to = Vector2(0.504717, 0.00943396)
+
+[sub_resource type="Gradient" id="Gradient_wbp15"]
+offsets = PackedFloat32Array(0, 0.0202703)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kk65e"]
+gradient = SubResource("Gradient_wbp15")
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_knngf"]
+frames = 4
+frame_0/texture = SubResource("GradientTexture2D_igk35")
+frame_0/duration = 0.84
+frame_1/texture = SubResource("GradientTexture2D_4hcme")
+frame_1/duration = 2.73
+frame_2/texture = SubResource("GradientTexture2D_wqoso")
+frame_2/duration = 0.95
+frame_3/texture = SubResource("GradientTexture1D_kk65e")
+frame_3/duration = 1.75
+
+[sub_resource type="BoxMesh" id="BoxMesh_o1dhc"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_lkf7y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.995375, 0.856304, 0.699148, 1)
+z_index = 10
+position = Vector2(2247.57, 1382.87)
+rotation = 0.21093
+scale = Vector2(824.5, 348.585)
+mesh = SubResource("CapsuleMesh_i6bib")
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="."]
+position = Vector2(2114, 1768)
+scale = Vector2(914.73, -455.175)
+skew = 0.356047
+mesh = SubResource("CapsuleMesh_qlgse")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="."]
+modulate = Color(0.316415, 1.20327e-06, 0.197791, 1)
+z_index = 30
+position = Vector2(2287, 1536)
+rotation = 1.68469
+scale = Vector2(95.5001, 220.564)
+skew = 0.0890118
+mesh = SubResource("CapsuleMesh_m7qpp")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="."]
+z_index = 30
+position = Vector2(2411.47, 1350.32)
+scale = Vector2(188.09, 77.8231)
+skew = 0.410152
+mesh = SubResource("BoxMesh_j3g0g")
+
+[node name="MeshInstance2D20" type="MeshInstance2D" parent="."]
+modulate = Color(1, 0, 1, 1)
+z_index = 30
+position = Vector2(2414.6, 1347.66)
+scale = Vector2(75.5246, 26.9095)
+skew = 0.410152
+mesh = SubResource("BoxMesh_j3g0g")
+
+[node name="MeshInstance2D21" type="MeshInstance2D" parent="."]
+z_index = 30
+position = Vector2(2125.16, 1367.08)
+scale = Vector2(249.265, 139.761)
+skew = 0.410152
+mesh = SubResource("BoxMesh_j3g0g")
+
+[node name="MeshInstance2D22" type="MeshInstance2D" parent="."]
+modulate = Color(0.637149, 0, 0.167109, 1)
+z_index = 30
+position = Vector2(2142.2, 1360.18)
+scale = Vector2(202.829, 109.434)
+skew = 0.410152
+mesh = SubResource("BoxMesh_j3g0g")
+texture = SubResource("AnimatedTexture_knngf")
+
+[node name="MeshInstance2D23" type="MeshInstance2D" parent="."]
+position = Vector2(2708, 1735)
+rotation = -1.16549
+scale = Vector2(390.365, -336.15)
+mesh = SubResource("CapsuleMesh_qlgse")
+
+[node name="MeshInstance2D28" type="MeshInstance2D" parent="."]
+modulate = Color(0.415686, 0.415686, 0.403922, 1)
+z_index = -10
+position = Vector2(1736, 2178)
+scale = Vector2(-300.31, 323.111)
+mesh = SubResource("BoxMesh_o1dhc")
+
+[node name="MeshInstance2D29" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+z_index = -20
+position = Vector2(1785, 2374)
+rotation = -2.20924
+scale = Vector2(-522.246, 314.02)
+mesh = SubResource("SphereMesh_lkf7y")
+
+[node name="WITCH_EPIC_LEG2" type="Node2D" parent="."]
+position = Vector2(500, 0)
+
+[node name="WITCH_EPIC_LEG" type="Node2D" parent="WITCH_EPIC_LEG2"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_LEG2/WITCH_EPIC_LEG"]
+modulate = Color(0.416684, 0.417146, 0.405763, 1)
+z_index = -10
+position = Vector2(1736, 2178)
+scale = Vector2(-300.31, 323.111)
+mesh = SubResource("BoxMesh_o1dhc")
+
+[node name="WITCH_EPIC_FOOT" type="Node2D" parent="WITCH_EPIC_LEG2"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WITCH_EPIC_LEG2/WITCH_EPIC_FOOT"]
+modulate = Color(0, 0, 0, 1)
+z_index = -20
+position = Vector2(1785, 2374)
+rotation = -2.20924
+scale = Vector2(-522.246, 314.02)
+mesh = SubResource("SphereMesh_lkf7y")
+
+[node name="MeshInstance2D24" type="MeshInstance2D" parent="."]
+modulate = Color(0.973535, 0.973535, 0.973535, 1)
+self_modulate = Color(0.991164, 0.991164, 0.991164, 1)
+position = Vector2(1947, 1806)
+rotation = -1.16549
+scale = Vector2(390.365, -336.15)
+mesh = SubResource("CapsuleMesh_qlgse")
