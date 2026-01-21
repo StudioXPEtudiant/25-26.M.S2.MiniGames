@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bfeurhbn7eveq"]
+[gd_scene load_steps=19 format=3 uid="uid://bfeurhbn7eveq"]
 
 [ext_resource type="PackedScene" uid="uid://dfqxciho0vgkr" path="res://personnage_principal.tscn" id="1_svjap"]
 [ext_resource type="Script" path="res://top_down_controller.gd" id="2_jlclb"]
@@ -36,6 +36,12 @@ text = "^
 
 [sub_resource type="SphereMesh" id="SphereMesh_ifm55"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fe08l"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_cfa3d"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vrqag"]
+
 [node name="MAP DÉBUT HISTOIRE" type="Node2D"]
 position = Vector2(0, -7897)
 
@@ -49,7 +55,7 @@ mesh = SubResource("TextMesh_ware8")
 
 [node name="noir" type="MeshInstance2D" parent="."]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(-6437.67, 6212.58)
+position = Vector2(-6438, 6278)
 scale = Vector2(-23869, 39908.6)
 mesh = SubResource("QuadMesh_hrjy7")
 
@@ -139,20 +145,20 @@ mesh = SubResource("TextMesh_06wrg")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(1, 1, 0, 1)
-position = Vector2(131, 8184)
+position = Vector2(130.607, 8132.65)
 rotation = 3.13394
-scale = Vector2(2076.53, 1556.41)
+scale = Vector2(2076.53, 1254.32)
 mesh = SubResource("TextMesh_h3x22")
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(1047, 8260)
+position = Vector2(1046.45, 8192.9)
 rotation = 6.27506
-scale = Vector2(2076.53, 1556.41)
+scale = Vector2(2076.53, 1251.41)
 mesh = SubResource("TextMesh_h3x22")
 
 [node name="Personnage principal" parent="." instance=ExtResource("1_svjap")]
-position = Vector2(573, 8099)
+position = Vector2(573, 8027)
 scale = Vector2(10, 8.538)
 collision_layer = 5
 collision_mask = 5
@@ -174,5 +180,23 @@ show_behind_parent = true
 position = Vector2(-34612.9, -86935.5)
 scale = Vector2(452.26, 429.802)
 mesh = SubResource("SphereMesh_ifm55")
+
+[node name="lazeryeuxteleport" type="MeshInstance2D" parent="."]
+visible = false
+position = Vector2(572.5, 9536)
+scale = Vector2(211, 106)
+mesh = SubResource("CapsuleMesh_fe08l")
+
+[node name="lazeryeuxteleport2" type="MeshInstance2D" parent="."]
+visible = false
+position = Vector2(573, 9401)
+scale = Vector2(212, 243)
+mesh = SubResource("CapsuleMesh_cfa3d")
+
+[node name="lazeryeuxteleport3" type="MeshInstance2D" parent="."]
+visible = false
+position = Vector2(573, 9165.5)
+scale = Vector2(212, 165.5)
+mesh = SubResource("CapsuleMesh_vrqag")
 
 [connection signal="body_entered" from="porte/Area2D" to="Personnage principal" method="_on_area_2d_body_entered"]
