@@ -62,7 +62,7 @@ mesh = SubResource("QuadMesh_hrjy7")
 [node name="lumière" type="Node2D" parent="."]
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="lumière"]
-position = Vector2(-70324, 495168)
+position = Vector2(571, 4300)
 rotation = 3.14159
 scale = Vector2(1145.81, -9336.95)
 mesh = SubResource("QuadMesh_hrjy7")
@@ -182,7 +182,6 @@ scale = Vector2(452.26, 429.802)
 mesh = SubResource("SphereMesh_ifm55")
 
 [node name="lazeryeuxteleport" type="MeshInstance2D" parent="."]
-visible = false
 position = Vector2(572.5, 9536)
 scale = Vector2(211, 106)
 mesh = SubResource("CapsuleMesh_fe08l")
